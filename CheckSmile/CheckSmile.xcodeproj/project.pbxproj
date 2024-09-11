@@ -11,6 +11,9 @@
 		AB1C39B32C91BC9B006280CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1C39B22C91BC9B006280CF /* ContentView.swift */; };
 		AB1C39B52C91BC9C006280CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1C39B42C91BC9C006280CF /* Assets.xcassets */; };
 		AB1C39B92C91BC9C006280CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB1C39B82C91BC9C006280CF /* Preview Assets.xcassets */; };
+		AB1C39C02C91BF04006280CF /* FaceDetectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1C39BF2C91BF04006280CF /* FaceDetectionViewModel.swift */; };
+		AB1C39C22C91BF23006280CF /* FaceDetectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1C39C12C91BF23006280CF /* FaceDetectionView.swift */; };
+		AB1C39C42C91C036006280CF /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1C39C32C91C036006280CF /* ARViewContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		AB1C39B42C91BC9C006280CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB1C39B62C91BC9C006280CF /* CheckSmile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CheckSmile.entitlements; sourceTree = "<group>"; };
 		AB1C39B82C91BC9C006280CF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AB1C39BF2C91BF04006280CF /* FaceDetectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionViewModel.swift; sourceTree = "<group>"; };
+		AB1C39C12C91BF23006280CF /* FaceDetectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceDetectionView.swift; sourceTree = "<group>"; };
+		AB1C39C32C91C036006280CF /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 			children = (
 				AB1C39B02C91BC9B006280CF /* CheckSmileApp.swift */,
 				AB1C39B22C91BC9B006280CF /* ContentView.swift */,
+				AB1C39C32C91C036006280CF /* ARViewContainer.swift */,
+				AB1C39C12C91BF23006280CF /* FaceDetectionView.swift */,
+				AB1C39BF2C91BF04006280CF /* FaceDetectionViewModel.swift */,
 				AB1C39B42C91BC9C006280CF /* Assets.xcassets */,
 				AB1C39B62C91BC9C006280CF /* CheckSmile.entitlements */,
 				AB1C39B72C91BC9C006280CF /* Preview Content */,
@@ -139,8 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB1C39C02C91BF04006280CF /* FaceDetectionViewModel.swift in Sources */,
 				AB1C39B32C91BC9B006280CF /* ContentView.swift in Sources */,
 				AB1C39B12C91BC9B006280CF /* CheckSmileApp.swift in Sources */,
+				AB1C39C22C91BF23006280CF /* FaceDetectionView.swift in Sources */,
+				AB1C39C42C91C036006280CF /* ARViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +286,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to allow you to take photos.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -312,6 +325,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to the camera to allow you to take photos.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
